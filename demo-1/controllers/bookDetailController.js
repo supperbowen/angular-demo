@@ -1,4 +1,3 @@
-/*global angular*/
 (function (angular) {
 	"use strict";
 
@@ -9,10 +8,9 @@
 		},function(newSelected){
 			$scope.selectedBook = newSelected;
 		});
-
 		//destroy watch when controller unloaded.
 		$scope.$on('$destroy',function(){
 			watcher();
 		});
-	}])
+	}]);
 }(angular));
