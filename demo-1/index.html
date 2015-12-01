@@ -5,10 +5,18 @@
     <title>Angular Demo</title>
 </head>
 <body>
-    <div data-ng-app="angularDemo">
-        <div ui-view>
+<div data-ng-app="bookStoreApp">
+    <div ui-view>
 
-        </div>
     </div>
+</div>
+
+<script type="text/javascript" src="../lib/angular.js"></script>
+<script type="text/javascript" src="../lib/angular-ui-router.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="controllers/book-detail-controller.js"></script>
+<script type="text/javascript" src="controllers/book-list-controller.js"></script>
+<script type="text/javascript" src="controllers/book-main-controller.js"></script>
+<script type="text/javascript" src="serivces/book-data-service.js"></script>
 </body>
 </html>
