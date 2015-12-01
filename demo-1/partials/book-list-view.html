@@ -1,5 +1,10 @@
 <div>
     <div data-ng-repeat="book in books">
-
+        <div data-ng-click="selectBook(book)">
+            <span ng-bind="book.code"></span>
+            <span ng-bind="book.name"></span>
+            <span ng-bind="book.publisher"></span>
+            <span ng-bind="book.author"></span>
+        </div>
     </div>
 </div>

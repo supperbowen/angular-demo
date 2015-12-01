@@ -7,5 +7,15 @@
 				$scope.books = books;
 			});
 		};
+
+		$scope.selectBook = function selectBook(book){
+			dataService.selectBook(book);
+		};
+
+		$scope.getRowStyle = function getRowStyle(book){
+			if(book === dataService.getSelected()){
+				return 'selected';
+			}
+		};
 	}]);
 }(angular));

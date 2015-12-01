@@ -5,19 +5,19 @@
 	angular.module('bookStoreApp', []).config(['$stateProvider', function ($stateProvider) {
 		$stateProvider
 			.state('bookstore', {
-				url: '/',
-				controller: 'bookMainController',
-				template: 'partials/book-main-view.html'
+				url: 'bookstore/',
+				controller: 'bookStoreMainController',
+				template: './partials/book-main-view.html'
 			})
 			.state('bookstoreList', {
 				url: 'bookstore/list',
-				controller: 'bookListController',
-				template: 'partials/book-list-view.html'
+				controller: 'bookStoreListController',
+				template: './partials/book-list-view.html'
 			})
 			.state('bookstoreDetail', {
 				url: 'bookstore/detail',
-				controller: 'bookDetailController',
-				template: 'partials/book-detail-view.html'
+				controller: 'bookStoreDetailController',
+				template: './partials/book-detail-view.html'
 			});
 
 	}]);
