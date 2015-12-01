@@ -15,7 +15,7 @@
 					list = res.data;
 					service.selectBook(list[0]);
 					defer.resolve(list);
-				})
+				});
 			}else{
 				defer.resolve(list);
 			}
