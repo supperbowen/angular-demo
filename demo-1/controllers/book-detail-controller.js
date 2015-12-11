@@ -1,16 +1,11 @@
 (function (angular) {
-	"use strict";
+    "use strict";
 
-	var module = angular.module('bookStoreApp');
-	module.controller('bookStoreDetailController', ['$scope', 'bookStoreDataService', function ($scope, dataService) {
-		var watcher = $scope.$watch(function(){
-			return dataService.getSelected();
-		},function(newSelected){
-			$scope.selectedBook = newSelected;
-		});
-		//destroy watch when controller unloaded.
-		$scope.$on('$destroy',function(){
-			watcher();
-		});
-	}]);
+    var module = angular.module('bookStoreApp');
+    module.controller('bookStoreDetailController', ['$scope', '$state', 'bookStoreDataService', function ($scope, $state, dataService) {
+        $scope.selectedBook = dataService.getSelected();
+        $scope.goList = function goList() {
+            $state.go('bookstore.list')
+        };
+    }]);
 }(angular));

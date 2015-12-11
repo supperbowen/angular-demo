@@ -7,19 +7,19 @@
 
         $stateProvider
             .state('bookstore', {
-                url: 'bookstore/',
+                url: '/bookstore',
                 controller: 'bookStoreMainController',
-                template: './partials/book-main-view.html'
+                templateUrl: './partials/book-main-view.html'
             })
-            .state('bookstoreList', {
-                url: 'bookstore/list',
+            .state('bookstore.list', {
+                url: '/list',
                 controller: 'bookStoreListController',
-                template: './partials/book-list-view.html'
+                templateUrl: './partials/book-list-view.html'
             })
-            .state('bookstoreDetail', {
-                url: 'bookstore/detail',
+            .state('bookstore.detail', {
+                url: '/detail',
                 controller: 'bookStoreDetailController',
-                template: './partials/book-detail-view.html'
+                templateUrl: './partials/book-detail-view.html'
             });
 
     }]);

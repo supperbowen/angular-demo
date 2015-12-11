@@ -11,7 +11,7 @@
             if (!list) {
                 $http({
                     method: 'get',
-                    url: '../content/json/books.json'
+                    url: './content/json/books.json'
                 }).then(function (res) {
                     list = res.data;
                     service.selectBook(list[0]);
@@ -39,5 +39,6 @@
         service.getSelected = function getSelected() {
             return selected;
         };
+        return service;
     }]);
 }(angular));
