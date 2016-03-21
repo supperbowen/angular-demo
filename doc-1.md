@@ -1,12 +1,13 @@
 如何使用angular进行webapp开发
-1、 什么是WEBAPP
-2、angular开发与jquery开发的异同
-3、前端MVC框架
-4、angular的优势
-5、为什么要用angular
-6、angular - view
-7、angular - controller
-8、angular - model
+ 1. 什么是WEBAPP
+ 2. angular开发与jquery开发的异同
+ 3. 前端MVC框架
+ 4. angular的优势
+ 5. 为什么要用angular
+ 6. angular - view
+ 7. angular - controller
+ 8. angular - model
+
 
 1、什么是WEBAPP
 什么是WEBAPP，它与LOCALAPP有什么区别？
