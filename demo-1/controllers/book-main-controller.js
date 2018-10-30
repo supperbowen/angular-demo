@@ -3,6 +3,6 @@
 
     var module = angular.module('bookStoreApp');
     module.controller('bookStoreMainController', ['$scope', 'bookStoreDataService', function ($scope, bookDataService) {
-
+        // bookDataService.getList
     }]);
 }(angular))

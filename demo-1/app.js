@@ -1,4 +1,5 @@
 /*global angular*/
+import './serivces/book-data-service'
 (function (angular) {
     "use strict";
 

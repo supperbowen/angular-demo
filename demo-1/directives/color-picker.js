@@ -6,10 +6,10 @@
     function() {
       return {
         scope: {
-          format: '@' // @ =
+          format:'@'
         },
         restrict: 'A',
-        require: '?ngModel',
+        require: 'ngModel',
         templateUrl: './directives/color-picker.html',
         link: function(scope, element, attr, ctrl) {
           var picker = null;
@@ -38,7 +38,7 @@
                * @param {*} hsva 颜色对象
                * @param {*} instance
                */
-              onSave(hsva, instance) {
+              onSave:(hsva, instance)=> {
                 var val = hsva ? hsva.toHEX().toString() : '';
                 ctrl.$setViewValue(val);
               }
